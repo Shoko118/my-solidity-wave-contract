@@ -1,6 +1,6 @@
 const main = async () => {
   // to deploy in blockchain we need to get the wallet address of owner and randomPerson
-  const [owner, randomPerson] = await hre.ethers.getSigners();
+  const [owner] = await hre.ethers.getSigners();
 
   //it will get and compile our contract and generate necessary files we need to work our contracts under `artifacts` directory
   const waveContractFactory = await hre.ethers.getContractFactory("WavePortal");
